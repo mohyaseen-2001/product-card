@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    padding-top: 80px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(6, 6, 6);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1ca345; 
+}
+
+.card {
+    width: 320px;
+    margin: 60px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.head {
+    height: 220px;
+    position: relative;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.head img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.head img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.discount-badge {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #ff3b30;
+    color: white;
+    width: 45px;
+    height: 45px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    z-index: 20;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    padding: 20px; 
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.amount {
+    margin-bottom: 15px;
+}
+
+.amount h2 {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #000;
+    margin-right: 10px;
+}
+
+.amount p {
+    display: inline-block;
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.btn {
+    text-align: center;
+    margin: 15px 0 25px 0;
+}
+
+.btn button {
+    display: inline-block;
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn button:first-child {
+    background-color: #1ca345;
+    color: white;
+    margin-right: 12px;
+}
+
+.btn button:last-child {
+    background-color: #4a5568;
+    color: white;
+}
+
+.btn button:first-child:hover {
+    background-color: #158034;
+}
+
+.btn button:last-child:hover {
+    background-color: #2d3748;
+}
+
+.OOF {
+    position: absolute;
+    bottom: -18px;
+    right: 20px;
+    z-index: 20;
+}
+
+.OOF span {
+    display: inline-block;
+    background-color: #1a202c;
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
