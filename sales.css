@@ -49,6 +49,7 @@ nav a:hover {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: relative;
+    overflow: visible;
 }
 
 .head {
@@ -92,8 +93,8 @@ nav a:hover {
 }
 
 .content {
-    padding: 20px; 
-    text-align: center;
+    padding: 25px 20px; 
+    text-align: left;
 }
 
 .content h1 {
@@ -128,8 +129,8 @@ nav a:hover {
 }
 
 .btn {
-    text-align: center;
-    margin: 15px 0 25px 0;
+    text-align: left;
+    margin: 20px 0 10px 0;
 }
 
 .btn button {
@@ -166,8 +167,9 @@ nav a:hover {
 .OOF {
     position: absolute;
     bottom: -18px;
-    right: 20px;
+    left: 50%;
     z-index: 20;
+    white-space: nowrap;
 }
 
 .OOF span {
@@ -180,4 +182,3 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
